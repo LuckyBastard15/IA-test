@@ -14,5 +14,6 @@ namespace Unity.MLAgents.Actuators
         /// <param name="actionBuffersOut">The <see cref="ActionBuffers"/> data structure to be filled by the
         /// object implementing this interface.</param>
         void Heuristic(in ActionBuffers actionBuffersOut);
+        void OnActionReceived(float[] vectorAction);
     }
 }

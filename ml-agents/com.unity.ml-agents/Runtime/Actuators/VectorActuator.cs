@@ -101,5 +101,15 @@ namespace Unity.MLAgents.Actuators
         {
             return BuiltInActuatorType.VectorActuator;
         }
+
+        public void Heuristic(float[] actionsOut)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OnActionReceived(float[] vectorAction)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

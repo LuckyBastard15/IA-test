@@ -162,6 +162,8 @@ namespace Unity.MLAgents.Actuators
     /// </summary>
     public interface IActionReceiver
     {
+        void Heuristic(float[] actionsOut);
+
         /// <summary>
         /// Method called in order too allow object to execute actions based on the
         /// <see cref="ActionBuffers"/> contents.  The structure of the contents in the <see cref="ActionBuffers"/>
@@ -169,6 +171,7 @@ namespace Unity.MLAgents.Actuators
         /// </summary>
         /// <param name="actionBuffers">The data structure containing the action buffers for this object.</param>
         void OnActionReceived(ActionBuffers actionBuffers);
+        void OnActionReceived(float[] vectorAction);
 
         /// <summary>
         /// Implement `WriteDiscreteActionMask()` to modify the masks for discrete

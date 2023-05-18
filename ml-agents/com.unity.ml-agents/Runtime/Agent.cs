@@ -1423,5 +1423,15 @@ namespace Unity.MLAgents
                 }
             }
         }
+
+        public void Heuristic(float[] actionsOut)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void OnActionReceived(float[] vectorAction)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -184,5 +184,15 @@ namespace Unity.MLAgents.Integrations.Match3
         {
             return 1;
         }
+
+        public void Heuristic(float[] actionsOut)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void OnActionReceived(float[] vectorAction)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
